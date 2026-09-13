@@ -17,7 +17,7 @@ pipeline {
             steps {
                 script {
                     sh """
-                        docker build -t ${APP_NAME}:${BUILD_NUMBER} .
+                        docker build -t mostafaosmanfathi/${APP_NAME}:${BUILD_NUMBER} .
                     """
                 }
             }
@@ -50,7 +50,7 @@ pipeline {
             steps {
                 script {
                     sh """
-                        docker push ${APP_NAME}:${BUILD_NUMBER}
+                        docker push mostafaosmanfathi/${APP_NAME}:${BUILD_NUMBER}
                     """
                 }
             }
