@@ -50,7 +50,7 @@ pipeline {
             steps {
                 script {
                     sh """
-                        docker push ${APP_NAME}:${BUILD_NUMBER}
+                        docker push mostafaosmanfathi/${APP_NAME}:${BUILD_NUMBER}
                     """
                 }
             }
